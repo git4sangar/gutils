@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+/* Header Section */
+
+.yume-top-nav a:hover {
+	background: none repeat scroll 0 0 #E3E8EC;
+	color: #00A9E0;
+}
+.yume-top-nav a:hover:after {
+	border-top: 5px solid #E3E8EC;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: "";
+	left: 50%;
+	margin-left: -8px;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+ @media (max-width: 500px) {
+.yume-top-nav a {
+	padding: 6px 10px;
+}
+}
+.yume-top-nav a.active {
+	background: none repeat scroll 0 0 #00a9e0;
+	color: #fff;
+}
+.yume-top-nav a.active:hover, .yume-top-nav a.active:focus {
+	border-top-color: rgba(0, 0, 0, 0);
+}
+.yume-top-nav a.active:after {
+	border-top: 5px solid #00a9e0;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: "";
+	left: 50%;
+	margin-left: -8px;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+.yume-top-nav .logo-wrap {
+	border: 0 none;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.yume-top-nav .logo-wrap a {
+	border: 0 none;
+	color: #FFFFFF;
+	margin-right: 0;
+}
+.yume-top-rightnav {
+	float: right;
+}
+.yume-select {
+	overflow: hidden;
+	margin: 10px;
+	cursor: pointer;
+	font-size: 12px;
+}
+.yume-select a {
+	color: #333333;
+	display: inline-block;
+	padding: 8px 8px 6px;
+	position: relative;
+	text-decoration: none;
+	border-radius: 3px;
+}
+.yume-select a.signin:hover {
+	background: none repeat scroll 0 0 #00a9e0;
+	color: #fff;
+	text-decoration: none;
+}
+.yume-select a.active {
+	background: none repeat scroll 0 0 #00a9e0;
+	color: #fff;
+}
+.yume-select > a.signin:hover >.yume-pointer {
+	border-top: 5px solid #fff;
+}
+.yume-select > a.active >.yume-pointer {
+	border-top: 5px solid #fff;
+}
+.yume-select > a >.yume-pointer {
+	border-top: 5px solid #333333;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	-moz-transition: color 0.1s linear;
+	-o-transition: color 0.1s linear;
+	transition: color 0.1s linear;
+}
+/* Header Section */
+
+/* -----Bread Crumb Style ----- */
+
+div.bread-crum li a {
+	color: #7d7d7d;
+	text-decoration: none;
+}
+div.bread-crum li a:hover {
+	color: #00A9E0;
+}
+div.bread-crum li.current {
+	color: #00A9E0;
+}
+div.bread-crum li .link-text {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+div.bread-crum li .yume-pointer {
+	border-left: 5px solid #7d7d7d;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	-moz-transition: color 0.1s linear;
+	-o-transition: color 0.1s linear;
+	transition: color 0.1s linear;
+}
+div.bread-crum li:hover .yume-pointer {
+	border-left: 5px solid #00A9E0
+}
+div.bread-crum li.current .yume-pointer {
+	border-left: 5px solid #00A9E0
+}
+/* -----End of Bread Crumb Style----- */
+/*Left Navigation*/
+
+.menu-list a:hover {
+	background: none repeat scroll 0 0 #E3E8EC;
+	color: #00A9E0;
+	text-decoration: none;
+}
+.menu-list a:hover:after {
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #E3E8EC;
+	content: "";
+	right: -7px;
+	position: absolute;
+	top: 28%;
+	z-index: 1000;
+}
+ @media (max-width: 500px) {
+.menu-list a {
+	padding: 6px 10px;
+}
+}
+.menu-list a.active {
+	background: none repeat scroll 0 0 #00a9e0;
+	color: #fff;
+}
+.menu-list a.active:hover, .menu-list a.active:focus {
+	border-top-color: rgba(0, 0, 0, 0);
+}
+.menu-list a.active:after {
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #00a9e0;
+	content: "";
+	right: -7px;
+	position: absolute;
+	top: 28%;
+	z-index: 1000;
+}
+/*End of Left Navigation*/
+
+/*Btn color change*/
+input.blue-normal-btn {
+	background-color: #fff;
+	background-image: -ms-linear-gradient(top, #f4f4f4 20%, #f0f0f0 10%, #fff 90%, #00A9E0 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#00A9E0', GradientType=0);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(10%, #f0f0f0), color-stop(90%, #fff), color-stop(100%, #00A9E0));
+	background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 10%, #fff 90%, #00A9E0 100%);
+	background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 10%, #fff 90%, #00A9E0 100%);
+	background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 10%, #fff 90%, #00A9E0 100%);
+}

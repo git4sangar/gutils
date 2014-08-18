@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* Response post for RFP CSS Document */
+
+.post {
+	border: 1px solid #CCCCCC;
+	cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+	/*give the background a gradient - see cssdemos.tupence.co.uk/gradients.htm for more info*/
+	background-color: #fff;
+	color: #333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	/*add a drop shadow to the button*/
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	-ms-box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	-o-box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	margin-bottom: 5px;
+	padding: 10px;
+	width: 90%;
+	float:left;
+	margin-left:20px;
+}
+.post .title {
+	color: #333333;
+	font-size: 12px;
+	padding: 0 0;
+	float:left;
+	clear:both;
+	width:100%
+}
+.post .entry {
+	border-top: 1px solid #E0E0E0;
+	float:left;
+	margin-top:5px;
+	color:#666;
+	width:100%
+	
+}
+
+.post .title .email {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00A9E0;
+	padding: 0 0 !important;
+	margin: 0 0 !important;
+	float:left;
+}
+
+.post .title .date {
+	font-size: 12px;
+	font-style:italic;
+	color: #999999;
+	float:right;
+	margin-top:5px
+}

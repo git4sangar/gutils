@@ -1,0 +1,190 @@
+[yume-hint] {
+  position: relative;
+  display: inline-block;
+  }
+ [yume-hint]:before, [yume-hint]:after {
+    position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .yumehint:hover:before, .yumehint:hover:after, .yumehint:focus:before, .yumehint:focus:after, [yume-hint]:hover:before, [yume-hint]:hover:after, [yume-hint]:focus:before, [yume-hint]:focus:after {
+    visibility: visible;
+    opacity: 1; }
+  .yumehint:before, [yume-hint]:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 6px solid transparent;
+    z-index: 1000001; }
+  .yumehint:after, [yume-hint]:after {
+    content: attr(yume-hint);
+    background: #383838;
+    color: white;
+    text-shadow: 0 -1px 0px black;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
+
+/*** set default color for tooltip arrows*/
+.yume-hint-top:before {
+  border-top-color: #383838; }
+
+.yume-hint-bottom:before {
+  border-bottom-color: #383838; }
+
+.yume-hint-left:before {
+  border-left-color: #383838; }
+
+.yume-hint-right:before {
+  border-right-color: #383838; }
+
+/**
+ * top tooltip
+ */
+.yume-hint-top:before {
+  margin-bottom: -12px; }
+.yume-hint-top:after {
+  margin-left: -18px; }
+.yume-hint-top:before, .yume-hint-top:after {
+  bottom: 100%;
+  left: 50%; }
+.yume-hint-top:hover:after, .yume-hint-top:hover:before, .yume-hint-top:focus:after, .yume-hint-top:focus:before {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px); }
+
+/**
+ * bottom tooltip
+ */
+.yume-hint-bottom:before {
+  margin-top: -12px; }
+.yume-hint-bottom:after {
+  margin-left: -18px; }
+.yume-hint-bottom:before, .yume-hint-bottom:after {
+  top: 100%;
+  left: 50%; }
+.yume-hint-bottom:hover:after, .yume-hint-bottom:hover:before, .yume-hint-bottom:focus:after, .yume-hint-bottom:focus:before {
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px); }
+
+/**
+ * right tooltip
+ */
+.yume-hint-right:before {
+  margin-left: -12px;
+  margin-bottom: -6px; }
+.yume-hint-right:after {
+  margin-bottom: -14px; }
+.yume-hint-right:before, .yume-hint-right:after {
+  left: 100%;
+  bottom: 50%; }
+.yume-hint-right:hover:after, .yume-hint-right:hover:before, .yume-hint-right:focus:after, .yume-hint-right:focus:before {
+  -webkit-transform: translateX(8px);
+  -moz-transform: translateX(8px);
+  transform: translateX(8px); }
+
+/*** left tooltip */
+.yume-hint-left:before {
+  margin-right: -12px;
+  margin-bottom: -6px; }
+.yume-hint-left:after {
+  margin-bottom: -14px; }
+.yume-hint-left:before, .yume-hint-left:after {
+  right: 100%;
+  bottom: 50%; }
+.yume-hint-left:hover:after, .yume-hint-left:hover:before, .yume-hint-left:focus:after, .yume-hint-left:focus:before {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px); }
+
+
+/** * Error */
+.yume-hint-error:after {
+  background-color: #b34e4d;
+  text-shadow: 0 -1px 0px #592726; }
+.yume-hint-error.yume-hint-top:before {
+  border-top-color: #b34e4d; }
+.yume-hint-error.yume-hint-bottom:before {
+  border-bottom-color: #b34e4d; }
+.yume-hint-error.yume-hint-left:before {
+  border-left-color: #b34e4d; }
+.yume-hint-error.yume-hint-right:before {
+  border-right-color: #b34e4d; }
+
+/*** Warning*/
+.yume-hint-warning:after {
+  background-color: #c09854;
+  text-shadow: 0 -1px 0px #6c5328; }
+.yume-hint-warning.yume-hint-top:before {
+  border-top-color: #c09854; }
+.yume-hint-warning.yume-hint-bottom:before {
+  border-bottom-color: #c09854; }
+.yume-hint-warning.yume-hint-left:before {
+  border-left-color: #c09854; }
+.yume-hint-warning.yume-hint-right:before {
+  border-right-color: #c09854; }
+
+/*** Info*/
+.yume-hint-info:after {
+  background-color: #3986ac;
+  text-shadow: 0 -1px 0px #193b4d; }
+.yume-hint-info.yume-hint-top:before {
+  border-top-color: #3986ac; }
+.yume-hint-info.yume-hint-bottom:before {
+  border-bottom-color: #3986ac; }
+.yume-hint-info.yume-hint-left:before {
+  border-left-color: #3986ac; }
+.yume-hint-info.yume-hint-right:before {
+  border-right-color: #3986ac; }
+
+/*** Success */
+.yume-hint-success:after {
+  background-color: #458746;
+  text-shadow: 0 -1px 0px #1a321a; }
+.yume-hint-success.yume-hint-top:before {
+  border-top-color: #458746; }
+.yume-hint-success.yume-hint-bottom:before {
+  border-bottom-color: #458746; }
+.yume-hint-success.yume-hint-left:before {
+  border-left-color: #458746; }
+.yume-hint-success.yume-hint-right:before {
+  border-right-color: #458746; }
+
+
+.yume-hint-always:after, .yume-hint-always:before {
+  opacity: 1;
+  visibility: visible; }
+.yume-hint-always.yume-hint-top:after, .yume-hint-always.yume-hint-top:before {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px); }
+.yume-hint-always.yume-hint-bottom:after, .yume-hint-always.yume-hint-bottom:before {
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px); }
+.yume-hint-always.yume-hint-left:after, .yume-hint-always.yume-hint-left:before {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px); }
+.yume-hint-always.yume-hint-right:after, .yume-hint-always.yume-hint-right:before {
+  -webkit-transform: translateX(8px);
+  -moz-transform: translateX(8px);
+  transform: translateX(8px); }
+
+
+.yume-hint-rounded:after {
+  border-radius: 4px; }
+.yume-hint-bounce:before, .yume-hint-bounce:after {
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24); }

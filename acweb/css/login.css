@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*Login page CSS Document */
+body {
+	background-color: #FFFFFF !important;
+	font-family: 'Lucida Grande',Tahoma,Verdana,sans-serif;
+}
+
+.hdrparent{
+	margin-left:10%;
+	-moz-column-count: 2;
+    -moz-column-gap: 50%;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50%;
+    column-count: 2;
+    column-gap: 50%;
+}
+.hdrparent div{
+    width:50px;
+    height:50px;  
+
+}
+.hdrleft{
+    float:left;
+}
+.hdrright{
+    float:right;
+}
+
+
+.headerbg3{background: url("../../images/login-headerbg3.png") no-repeat scroll right top #FFFFFF;}
+.headerbg1{background: url("../../images/login-headerbg.png") no-repeat scroll right top #FFFFFF;}
+.headerbg2{background: url("../../images/login-headerbg2.png") no-repeat scroll right top #FFFFFF;}
+.headerbg4{background: url("../../images/login-headerbg2.png") no-repeat scroll right top #FFFFFF;}
+@font-face {
+	font-family: 'Fusion';
+	src: url('fonts/Fusion.eot');
+	src: local('Fusion'), url('fonts/Fusion.woff') format('woff'), url('fonts/Fusion.ttf') format('truetype');
+}
+.set-height-450 {
+	height: 567px;
+	margin-top:30px;
+}
+.page-wrapper {min-width:1000px !important}
+.banner { float:left; width:65%}
+.footer-container { width:1200px !important; }
+
+.login {
+  padding: 20px 20px 20px 20px;
+  width: 25%;
+  min-width:300px;
+  margin:2px; 
+  background: white;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+ position:absolute;
+ right:20px !important;
+min-height:522px;
+ }
+
+.login h1 {
+  margin: -20px -20px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  text-shadow: 0 1px white;
+  background: #f3f3f3;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.login p {
+  margin: 20px 0 0;
+}
+.login p:first-child {
+  margin-top: 0;
+}
+.login input[type=text], .login input[type=password] {
+  min-width: 240px;
+  width:90%;
+}
+.login p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+.login p.remember_me label {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+.login p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.login p.submit {
+  text-align: right;
+}
+
+.login1 p.submit {
+  text-align: left;
+}
+
+.login-help {
+  margin: 20px 0 0 0;
+  font-size: 11px;
+  color: 777777;
+  text-align: center;
+}
+.login-help a {
+  color: #00A9E0;
+  text-decoration: none;
+}
+.login-help a:hover {
+  text-decoration: underline;
+}
+
+:-moz-placeholder {
+  color: #c9c9c9 !important;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+input {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  margin: 5px;
+  padding: 0 10px 0 25px;;
+  width: 140px;
+  height: 30px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+.field {
+    position: relative;
+}
+
+.field i {
+    color: #777777;
+    height: 36px;
+    left: 3px;
+    line-height: 42px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    transition: all 0.3s ease-out 0s;
+    width: 36px;
+}
+
+.headerbg2 .da-slider {	border-top: 8px solid #0060a0 !important;
+	border-bottom: 8px solid #0060a0 !important;}
+	
+.headerbg2 .da-slide h2{
+	color: #0060a0 !important;
+	
+}
+
+.headerbg3 .da-slider {	border-top: 8px solid #198942 !important;
+	border-bottom: 8px solid #198942 !important;}
+	
+.headerbg3 .da-slide h2{
+	color: #198942 !important;
+	
+}
